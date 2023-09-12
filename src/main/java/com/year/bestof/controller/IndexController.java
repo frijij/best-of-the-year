@@ -21,6 +21,14 @@ public class IndexController {
         return "index";
     }
 
+    @GetMapping("/movies")
+    public String moviesList(Model model){
+        List<Movie> moviesList = getBestMovies();
+        model.addAttribute("movies", moviesList);
+        return "movies";
+    }
+
+
     // metodi private
     private List<Movie> getBestMovies(){
         List<Movie> movies = new ArrayList<>();

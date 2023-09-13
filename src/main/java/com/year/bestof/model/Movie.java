@@ -2,12 +2,12 @@ package com.year.bestof.model;
 
 public class Movie {
     private int id;
-    private String titolo;
+    private String title;
 
 
-    public Movie(int id, String titolo) {
+    public Movie(int id, String title) {
         this.id = id;
-        this.titolo = titolo;
+        this.title = title;
     }
 
     public Movie(){}
@@ -20,11 +20,11 @@ public class Movie {
         this.id = id;
     }
 
-    public String getTitolo() {
-        return titolo;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTitolo(String titolo) {
-        this.titolo = titolo;
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

@@ -5,7 +5,12 @@
     <title>Best of the year- songs</title>
 </head>
 <body>
-<h1>songs</h1>
-<a th:href="@{/}">Home</a>
+<h1>Songs</h1>
+<div>
+    <ul>
+        <li th:each="song : ${songs}" th:text="${song.title}"></li>
+    </ul>
+    <a th:href="@{/}">Home</a>
+</div>
 </body>
 </html>

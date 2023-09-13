@@ -2,12 +2,30 @@ package com.year.bestof.model;
 
 public class Song {
     private int id;
-    private String titolo;
+    private String title;
 
-    public Song(int id, String titolo){
+    public Song(int id, String title){
         this.id=id;
-        this.titolo=titolo;
+        this.title =title;
     }
 
     public Song(){}
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }
+
+

@@ -17,16 +17,16 @@ public class IndexController {
     @GetMapping
     public String index(Model model){
         String myName = "Francesca";
-        model.addAttribute("username", myName);
+        model.addAttribute("name", myName);
         return "index";
     }
 
-    @GetMapping("/movies")
+  /*  @GetMapping("/movies")
     public String moviesList(Model model){
         List<Movie> moviesList = getBestMovies();
         model.addAttribute("movies", moviesList);
         return "movies";
-    }
+    }*/
 
 
     // metodi private

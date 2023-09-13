@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>Best of the year</title>
 </head>
-<body>
-<h1> Best of the year by <span th:text="${username}"></span> </h1>
+<body cz->
+<h1 th:text="|Best of the year by ${name}|"> </h1>
+<div>
+    <a th:href="@{/movies}">Movies</a>
+   <a th:href="@{/songs}">Songs</a>
+</div>
 </body>
 </html>

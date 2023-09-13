@@ -5,12 +5,7 @@
     <title>Best of the year - movies</title>
 </head>
 <body>
-<div class="container">
-    <h1>Best movies of the year:</h1>
-    <ul th:if="${movies.size() > 0}" class="list-group">
-        <li class="list-group-item" th:each="movie : ${movies}" th:text="|${movie.id} ${movie.title}|"></li>
-    </ul>
-</div>
-
+<h1> movies </h1>
+<a th:href="@{/}">Home</a>
 </body>
 </html>
